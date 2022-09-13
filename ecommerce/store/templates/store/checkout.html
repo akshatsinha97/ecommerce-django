@@ -101,7 +101,7 @@
           <img class="row-image" src="{{item.product.imageURL}}" />
         </div>
         <div style="flex: 2"><p>{{item.product.name}}</p></div>
-        <div style="flex: 1"><p>Rs {{item.product.price}}</p></div>
+        <div style="flex: 1"><p>${{item.product.price}}</p></div>
         <div style="flex: 1"><p>x{{item.quantity}}</p></div>
       </div>
       {% endfor %}
@@ -111,7 +111,7 @@
   </div>
 </div>
 
-<script src="https://www.paypal.com/sdk/js?client-id=AZ-A5fIUzHc9CQXYOyZg8WdgqDIx2sWfsg3uJ5HkktUJYYwQL5MkpDYrI7uTSQx04_XXZii0cRi5Ispu&currency=USD"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AUM7N1vQ9tZVF5489mtM2W_DytFeJ7CUKg-pDYyL2g9LuEuUgEuiXvYIrwnRcM39eA8jWnVPa3GbI5Uk&currency=USD"></script>
 
 <script>
   var total = '{{order.get_cart_total}}'
